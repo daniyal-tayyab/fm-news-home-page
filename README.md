@@ -24,7 +24,12 @@ Users should be able to:
 
 ### Screenshot
 
+## Desktop
+
 ![](./news-page-desktop.png)
+
+## Mobile
+
 ![](./news-page-mobile.png)
 
 ### Links
