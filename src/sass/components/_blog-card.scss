@@ -1,0 +1,49 @@
+.card {
+  height: 16rem;
+  display: flex;
+  cursor: pointer;
+
+  &__image {
+    height: 100%;
+  }
+
+  &__content {
+    margin-left: 2rem;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__serial {
+      font-size: 3rem;
+      word-spacing: 3px;
+      color: $colorGrayishBlue;
+      // margin-bottom: 3rem;
+    }
+
+    &__title {
+      color: $colorVeryDarkBlue;
+      font-weight: 700;
+      // margin-bottom: 3rem;
+      transition: all 0.2s;
+
+      &:hover {
+        color: $colorSoftRed;
+      }
+    }
+
+    &__description {
+      margin-bottom: 1rem;
+      font-size: 1.4rem;
+    }
+  }
+
+  @include respond(phone) {
+    width: 100%;
+
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+}
